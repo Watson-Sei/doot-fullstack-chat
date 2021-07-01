@@ -19,6 +19,10 @@
 # method: GET
 # path: /users/index/
 
+# title: ChatHistroyUserList 
+# method: GET
+# path: /users/history/
+
 # title: RoomList
 # method: GET
 # path: /rooms/index/
