@@ -3,7 +3,7 @@ class RoomsController < ApplicationController
 
   def index 
     @rooms = Room.all 
-    render json: @rooms
+    # render json: @rooms
   end
 
   def create
@@ -11,7 +11,7 @@ class RoomsController < ApplicationController
     @entry1 = Entry.create(:room_id => @room.id, :user_id => current_user.id)
     @entry2 = Entry.create(params.permit(:user_id, :room_id).merge(:room_id => @room.id))
 
-    render json: @room
+    # render json: @room
   end
 
   def show 
@@ -19,7 +19,7 @@ class RoomsController < ApplicationController
     if Entry.where(:user_id => current_user.id, :room_id => @room.id).present?
       @messages = @room.messages
       @entries = @room.entries 
-      render json: { messages: @messages, entries: @entries }
+      # render json: { messages: @messages, entries: @entries }
     end
   end
 end

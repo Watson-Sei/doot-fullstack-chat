@@ -1,5 +1,12 @@
 <template>
-  <v-app dark>
+  <v-app>
+    <v-navigation-drawer
+      app
+    >
+    </v-navigation-drawer>
+    <v-app-bar app>
+      <v-toolbar-title>User 1</v-toolbar-title>
+    </v-app-bar>
     <v-main>
       <v-container>
         <Nuxt />
@@ -16,5 +23,9 @@
 
 <script>
 export default {
+  data() {
+    return {
+    }
+  }
 }
 </script>
