@@ -20,7 +20,7 @@
         </v-container>
       </v-navigation-drawer>
       <v-app-bar app>
-        <v-toolbar-title>Romm {{ this.$route.params.id }}</v-toolbar-title>
+        <v-toolbar-title>Room {{ this.$route.params.id }}</v-toolbar-title>
       </v-app-bar>
     </div>
     <div v-else>
