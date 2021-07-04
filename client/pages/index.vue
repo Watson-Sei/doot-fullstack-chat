@@ -3,8 +3,11 @@
 
 <script>
 export default {
+  middleware: ['history'],
   data() {
-    return {}
+    return {
+
+    }
   },
 }
 </script>

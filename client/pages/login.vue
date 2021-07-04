@@ -60,7 +60,6 @@ export default {
                 }
             })
             .then((response) => {
-                console.log(response.headers)
                 return response
             },
             (error) => {
